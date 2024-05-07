@@ -1,0 +1,12 @@
+﻿{
+  "gpt35turbo": {
+    "AzureOpenAIEndpoint": "https://avafrontaistud3298632248.openai.azure.com",
+    "DeploymentName": "gpt-35-turbo",
+    "ApiKey": "37b16ac1b9c349e7a1a955c4dbabafe3"
+  },
+  "gpt4": {
+    "AzureOpenAIEndpoint": "https://AvaFrontCanadaEast.openai.azure.com",
+    "DeploymentName": "gpt-4-32k",
+    "ApiKey": "1f1b9512830f4fe688a2adb53ca2d21f"
+  }
+}
