@@ -11,7 +11,7 @@ namespace AvaFront.API.Controllers
         private Authentication auth;
         public SpeechController()
         {
-            auth = new Authentication("d9679cc461ff40678d4d11cf576131ca");
+            auth = new Authentication(Environment.GetEnvironmentVariable("AzureSpeechKey"));
         }
 
         // GET: api/<SpeechController>/token
@@ -24,8 +24,7 @@ namespace AvaFront.API.Controllers
 
     public class Authentication
     {
-        public static readonly string FetchTokenUri =
-            "https://eastus.api.cognitive.microsoft.com/sts/v1.0/issueToken";
+        public static readonly string FetchTokenUri = Environment.GetEnvironmentVariable("AzureSpeechTokenUri");
         private string subscriptionKey;
         private string token;
 
